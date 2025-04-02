@@ -2,7 +2,7 @@
 
 if [[ $1 == "desktop" ]]; then
   rm -r ~.config/nvim
-  ln -sv ~/.config/nvim $(pwd)/nvimMain
+  ln -sv $(pwd)/nvimMain ~/.config/nvim
   if [[ $2 == "wm" ]]; then
      pass
   fi
