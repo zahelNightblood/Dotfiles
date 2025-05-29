@@ -1,8 +1,8 @@
 #!/bin/bash
 
-CONFIG="$HOME/.config/wayfire/wofifullt/config.ini"
-STYLE="$HOME/.config/wayfire/wofifullt/style.css"
-COLORS="$HOME/.config/wayfire/wofifullt/colors"
+CONFIG="$HOME/Dotfiles/scripts/wofimenu/config.ini"
+STYLE="$HOME/Dotfiles/scripts/wofimenu/style.css"
+COLORS="$HOME/Dotfiles/scripts/wofimenu/colors"
 
 if [[ ! $(pidof wofi) ]]; then
 	wofi --show drun --prompt 'Search...' --conf ${CONFIG} --style ${STYLE} --color ${COLORS}
