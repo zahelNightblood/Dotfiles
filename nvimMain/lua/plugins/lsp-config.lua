@@ -22,10 +22,15 @@ return {
       lspconfig.lua_ls.setup({
         capabilities = capabilities
       })
+      lspconfig.nil_ls.setup({
+        capabilities =capabilities
+      })
       lspconfig.rust_analyzer.setup({
         capabilities =capabilities
       })
-
+      lspconfig.markdown_oxide.setup({
+        capabilities = capabilities
+      })
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
       vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
       vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
