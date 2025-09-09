@@ -25,9 +25,6 @@ return {
       lspconfig.nil_ls.setup({
         capabilities =capabilities
       })
-      lspconfig.rust_analyzer.setup({
-        capabilities =capabilities
-      })
       lspconfig.markdown_oxide.setup({
         capabilities = capabilities
       })
